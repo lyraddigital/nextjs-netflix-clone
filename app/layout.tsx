@@ -13,7 +13,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={clsx(
-        "bg-black text-white text-lg",
+        "bg-black text-white text-lg font-medium",
         myFont.className
       )}>{children}</body>
     </html>
