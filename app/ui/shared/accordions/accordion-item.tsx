@@ -10,10 +10,10 @@ interface AccordionItemProps extends PropsWithChildren {
 
 export default function FaqItem({ children, open, title, toggle }: AccordionItemProps) {
     return (
-        <li className="mt-2">
+        <li className="mt-2" onClick={toggle}>
             <div className="flex justify-between items-center p-6 bg-neutral-800">
                 <span>{title}</span>
-                <span onClick={toggle}>{open ? <AiOutlineClose /> : <AiOutlinePlus />}</span>
+                <span>{open ? <AiOutlineClose /> : <AiOutlinePlus />}</span>
             </div>
             <Collapse isOpened={open}>
                 <div className="mt-[1px] p-6 bg-neutral-800">
